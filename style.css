@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+.page-logo {
+  width: 400px;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.appChange button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #e9d700;
+  font-weight: bolder;
+  border: 2px solid black;
+  border-radius: 5px;
+  border: 3px solid white;
+  width: 248px;
+}
+
+.appChange button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* --------calculadora-------- */
+.calculator {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.calculator form {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator form label {
+  font-size: 1.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator form input {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.7rem;
+  width: 20%;
+  height: 2rem;
+  outline: none;
+  border: none;
+  background-color: #5a525252;
+  border-radius: 5px;
+}
+.calculator form button {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #e9d700;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.calculator form button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid #e9d700;
+}
+
+.resultado {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#situacaoEscolar {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: green;
+}
+
+#notaFinal {
+  font-size: 1.3rem;
+}
+
+.converter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.converter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.converter form label {
+  font-size: 1.5rem;
+  margin-top: 100px;
+}
+
+.converter form input {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+  width: 20%;
+  height: 3rem;
+  outline: none;
+  border: none;
+  background-color: #5a525252;
+  border-radius: 5px;
+}
+.converter form button {
+  font-size: 2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #e9d700;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.converter form button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid #e9d700;
+}
+
+.fahrenheit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 300px;
+  height: 100px;
+  font-size: 3rem;
+}

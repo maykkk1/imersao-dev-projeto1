@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+        class="page-logo" alt="">
+    <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <div class="appChange">
+        <button id="calculatorBtn">Calculadora de Média</button>
+        <button id="conveterBtn">Conversor de Temperatura</button>
+    </div>
+    <div class="container">
+        <div id="calculator" class="calculator">
+            <h1 class="calculator-title">Calculadora de Média</h1>
+            <p class="page-subtitle">
+                Descubra qual a sua média de nota de todas as provas!
+            </p>
+            <form>
+                <label for="notaDoPrimeiroBimestre">Primeira nota</label>
+                <input id="notaDoPrimeiroBimestre" type="number">
+                <label for="">Segunda nota</label>
+                <input id="notaDoSegundoBimestre" type="number">
+                <label for="">Terceira nota</label>
+                <input id="notaDoTerceiroBimestre" type="number">
+                <label for="">Quarta nota</label>
+                <input id="notaDoQuartoBimestre" type="number" maxlength="3">
+                <button id="mostrarResultado" type="submit">Resultado</button>
+                <div class="resultado">
+                    <span id="situacaoEscolar"></span>
+                    <span id="notaFinal"></span>
+                </div>
+            </form>
+        </div>
+        <div id="converter" class="converter">
+            <h1 class="converter-title">Conversor de temperatura</h1>
+            <p class="page-subtitle">
+                Converta Celsius para Fahrenheit!
+            </p>
+            <form>
+                <label for="">Celsius</label>
+                <input id="celsius" type="number">
+                <button id="calculateTemperatureBtn">Calcular</button>
+            </form>
+            <span id="fahrenheit" class="fahrenheit"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
